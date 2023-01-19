@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "VolvoIcons";
+    src: url("./fonts/VolvoIcons.woff2") format("woff"),url("./fonts/VolvoIcons.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto
+}
+@font-face {
+    font-family: 'Volvo Novum Light';
+    src: url("./fonts/VolvoNovum-Light-webfont.woff2") format("woff2"),url("./fonts/VolvoNovum-Light-webfont.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback
+}
+@font-face {
+    font-family: 'Volvo Novum Medium';
+    src: url("./fonts/VolvoNovum-Medium-webfont.woff2") format("woff2"),url("./fonts/VolvoNovum-Medium-webfont.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: 'Volvo Novum Regular';
+    src: url("./fonts/VolvoNovum-Regular-webfont.woff2") format("woff2"),url("./fonts/VolvoNovum-Regular-webfont.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: 'VolvoBroadProDigital';
+    src: url("./fonts/VolvoBroadProDigital-webfont.woff2") format("woff2"),url("./fonts/VolvoBroadProDigital-webfont.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-589
+}
+
+body{
+    font-family: VolvoBroadProDigital;
+}
+p{
+    margin: 0px
+}
+h1{
+    font-family: VolvoBroadProDigital;
+    font-size: 54px;
+    letter-spacing: 1.5px;
+}
+h5{
+    font-family: Arial, sans-serif;
+}
+header{
+    height: 885px;
+    background-image:url(images/banner-2400x720-new.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container-fluid{
+    display: flex;
+}
+.navbar a{
+    color: white;
+}
+
+.navbar-toggler-icon {
+    filter: invert();
+    border: none;
+    border-radius: none;
+}
+
+.navbar img{
+    width: 167px;
+    height: 31px;
+}
+
+/* @media (max-width:) */
+
+.navbar > .container-fluid {
+    margin-inline: 4%;
+}
+.nav-link {
+    font-family:Arial, sans-serif;
+    font-size: 18px;
+}
+.nav-link:hover{
+    color: white;
+}
+header:has(> .navbar ~ .row)  header .navbar{
+ background: white!important;
+}
+.head-caption{
+    position: absolute;
+    top: 50%;
+    font-size: 92px;
+    color: white;
+    font-family:VolvoBroadProDigital,Arial, sans-serif;
+    letter-spacing: 4px;
+    line-height: 1.3;
+    font-weight: 400;
+}
+@media (min-width: 1400px){
+.container {
+    max-width: 1580px;
+}}
+@media (max-width:990px){
+    .sm-none{
+        display: none;
+    }
+}
+.container{
+    width: 90% !important;
+}
+.text{
+    margin: 30px 0px;
+    text-align: left;
+}
+.text h5{
+    line-height: 1.5;
+    letter-spacing: .2px;
+    font-family:Arial, sans-serif;
+    font-size: 12px;
+}
+.text h1{
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track {
+    gap: 2rem;
+    overflow-x: hidden  ;
+    scroll-behavior: smooth;
+}
+
+.slider-track::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-item{
+    width: 430px;
+    position: relative;
+}
+.slider-text{
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+    color: white;
+}
+
+.slider-item img{
+    object-fit: cover;
+    height: 100%;
+}
+
+
+#slider-indicator {
+    flex: 1;
+    align-items: center;
+}
+
+.bar {
+    width: calc(100% / 9);
+    height: 2px;
+    background: rgb(211, 211, 211);
+
+}
+
+.bar.active {
+    height: 2.5px;
+    background: #004fbc;
+}
+#slider-prev{
+    font-family: VolvoIcons;
+    font-size: 24px;
+}
+#slider-next{
+    font-family: VolvoIcons;
+    font-size: 24px;
+}
+video{
+    padding-top: 60px;
+    aspect-ratio: auto 1600 / 900;
+}
+.text-head{
+    line-height: 1.5;
+    letter-spacing: .2px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4d4e53;
+}
+.text-caption{
+    font-family: Arial, sans-serif;
+    font-size: 43px;
+    font-weight: 700;
+    color: #4d4e53;
+}
+.blue-container{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 1.5;
+}
+.blue-container a{
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial,sans-serif;
+    box-sizing: border-box;
+    padding: 12px 32px;
+    background: #1251b5;
+    border: 1px solid #1251b5;
+    color: #fff;
+    transition: background 1s;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 1.5;
+    position: relative;
+    cursor: pointer;
+}
+.blue-container a::after{
+    content: "\279A";
+    margin-left: 10px;
+}
+.footer-container{
+    padding-top: 118px;
+    margin-bottom: 70px;
+}
+.footer-link a{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 27px;
+    color: white;
+}
+.footer-link a:hover{
+    color: #6d6d6e;
+}
+.footer-link li{
+    padding-bottom: 10px;
+}
+
+.footer-bottom{
+    color: #6d6d6e !important;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 0 0;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 2;
+    margin-bottom: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.footer-bottom::before {
+    content: "\00A9";
+    color: #6d6d6e;
+    margin-right: 5px;
+}
+.footer-para{
+    /* line-height: 1.5; */
+    letter-spacing: .2px;
+    font-family:Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+.blue-button{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.copyright{
+    text-align: right;
+    padding-bottom: 118px;
+}
+.footer-copy-list a{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+
+}
+.footer-copy-list1::after{
+    content: "\002E";
+    margin: 0px 10px;
+}
+@media (max-width:960px){
+    .copyright{
+        text-align: left;
+    }
+}
